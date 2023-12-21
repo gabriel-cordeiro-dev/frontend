@@ -20,9 +20,16 @@ export function Transactions() {
       <TransactionsContainer>
 
         <TransactionsTable>
+          <thead>
+            <th>Tipo</th>
+            <th>Capacidade</th>
+            <th>Mês</th>
+            <th>Ano</th>
+          </thead>
           <tbody>
             {transactions.map((transaction) => {
               return (
+                
                 <tr key={transaction.id}>
                   <td width="50%">
                     <PriceHighlight variant={transaction.type}>
